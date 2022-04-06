@@ -1,0 +1,22 @@
+{
+  "preset": "ts-jest",
+  "testEnvironment": "node",
+  "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"],
+  "roots": ["<rootDir>/src"],
+  "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(ts)$",
+  "transform": {
+    "^.+\\.ts$": "ts-jest"
+  },
+  "moduleNameMapper": {
+    "@authentication/(.*)": ["<rootDir>/src/authentication/$1"],
+    "@helpers/(.*)": ["<rootDir>/src/helpers/$1"],
+    "@participant/(.*)": ["<rootDir>/src/participant/$1"],
+    "@post/(.*)": ["<rootDir>/src/post/$1"],
+    "@user/(.*)": ["<rootDir>/src/user/$1"],
+    "@constants/(.*)": ["<rootDir>/src/constants/$1"],
+    "@room/(.*)": ["<rootDir>/src/room/$1"],
+    "@testing/(.*)": ["<rootDir>/src/testing/$1"],
+    "@database/(.*)": ["<rootDir>/src/database/$1"]
+  },
+  "moduleDirectories": ["node_modules", "./"]
+}

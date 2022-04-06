@@ -1,0 +1,14 @@
+{
+    "dbConfig": {
+        "DB_USER": "postgres",
+        "DB_HOST": "localhost",
+        "DB_PASSWORD": "root",
+        "DB_NAME": "testing",
+        "DB_PORT": 5432,
+        "DIR": "src"
+    },
+    "jwtConfig": {
+        "ACCESS_TOKEN_SECRET": "accessTokenSecret",
+        "REFRESH_TOKEN_SECRET": "refreshTokenSecret"
+    }
+}

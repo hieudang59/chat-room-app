@@ -1,0 +1,14 @@
+{
+    "dbConfig": {
+        "DB_USER": "",
+        "DB_HOST": "",
+        "DB_PASSWORD": "",
+        "DB_NAME": "",
+        "DB_PORT": 5432,
+        "DIR": "dist"
+    },
+    "jwtConfig": {
+        "ACCESS_TOKEN_SECRET": "",
+        "REFRESH_TOKEN_SECRET": ""
+    }
+}

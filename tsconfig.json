@@ -1,0 +1,51 @@
+{
+   "compilerOptions": {
+      "lib": [
+         "es5",
+         "es6"
+      ],
+      "target": "ES2020",
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "sourceMap": true,
+      "allowJs": true,
+      "rootDir": "./src",
+      "outDir": "./dist",
+      "strict": true,
+      "noImplicitAny": true,
+      "esModuleInterop": true,
+      "resolveJsonModule": true,
+      "types": [
+         "node",
+         "jest"
+      ],
+      "typeRoots": [
+         "./node_modules/@types"
+      ],
+      "strictPropertyInitialization": false,
+      "baseUrl": "./",
+      "paths": {
+         "@authentication/*":["src/authentication/*"],
+         "@helpers/*":["src/helpers/*"],
+         "@participant/*": [
+            "src/participant/*"
+         ],
+         "@post/*":["src/post/*"],
+         "@user/*":["src/user/*"],
+         "@constants/*":["src/constants/*"],
+         "@room/*":["src/room/*"],
+         "@testing/*":["src/testing/*"],
+         "@database/*":["src/database/*"]
+      },
+      "incremental": true
+   },
+   "include": [
+      "src/**/*.ts"
+   ],
+   "exclude": [
+      "node_modules",
+      "dist"
+   ]
+}
