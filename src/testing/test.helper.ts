@@ -1,3 +1,4 @@
+/*eslint-disable */
 import supertest from 'supertest';
 import Container from 'typedi';
 import { Repository } from 'typeorm';

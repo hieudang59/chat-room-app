@@ -4,10 +4,8 @@
   "description": "",
   "scripts": {
     "dev": "NODE_ENV=development nodemon -r tsconfig-paths/register src/index.ts",
-    "build": "tsc --build",
-    "start": "npm run build && node dist/index.js",
-    "test": "NODE_ENV=testing jest --no-cache --detectOpenHandles --watch",
-    "clear_jest": "jest --clearCache",
+    "test": "NODE_ENV=testing jest --no-cache --detectOpenHandles --watchAll",
+    "jest-clean": "jest --clearCache",
     "lint": "eslint src/**/*.ts"
   },
   "author": "Hieu Dang",

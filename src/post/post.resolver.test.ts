@@ -47,13 +47,13 @@ describe('PostResolver', () => {
     name: 'Test Room',
   };
 
-  let mockPostData = {
+  const mockPostData = {
     content: 'How about you?',
   } as Post;
-  let mockPostData2 = {
+  const mockPostData2 = {
     content: 'Where are you now?',
   } as Post;
-  let mockPostData3 = {
+  const mockPostData3 = {
     content: '^^',
   } as Post;
 

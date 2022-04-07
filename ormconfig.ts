@@ -12,14 +12,7 @@ const ormConfig: Connection.ConnectionOptions = {
   database: config.get('dbConfig.DB_NAME'),
   synchronize: true,
   logging: false,
-  entities: [`${dir}/**/*.entity.{ts,js}`],
-  migrations: [`${dir}/**/*.migration.{ts,js}`],
-  subscribers: [`${dir}/**/*.subscriber.{ts,js}`],
-  cli: {
-    migrationsDir: `${dir}/database/migrations`,
-    entitiesDir: `${dir}/database/entity`,
-    subscribersDir: `${dir}/database/subscriber`,
-  },
+  entities: [`${dir}/**/*.entity.{ts,js}`]
 };
 
-export = ormConfig;
+export default ormConfig;
